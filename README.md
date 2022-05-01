@@ -1,24 +1,8 @@
 # Revolut Task
 
-Currency exchange application for Revolut task.
-
-## [Demo](https://revoluttask.now.sh)
-
-https://revoluttask.now.sh
-
-## Tests
-
-[![Build Status](https://travis-ci.org/actuosus/revolut-task.svg?branch=master)](https://travis-ci.org/actuosus/revolut-task)
+Currency exchange application.
 
 ## Screenshots
-
-### Web
-
-<div class="center">
-  <img src="screenshots/revoluttask.now.sh_account_walletId_1_iPhone_6_7_8_.png" height="400" alt="Google Chrome Account Screenshot" title="Google Chrome in Simulator mode Account Screen"/>
-  <img src="screenshots/revoluttask.now.sh_account_fromWalletId_2_toWalletId_1_iPhone 6_7_8_.png"height="400" alt="Google Chrome Exchange Screenshot" title="Google Chrome in Simulator mode Exchange Screen"/>
-  <img src="records/RevolutTaskExchangeFlowWeb.gif" height="400" alt="Google Chrome Exchange Record" title="Google Chrome in Simulator mode Exchange Record" />
-</div>
 
 ### iOS
 
@@ -75,23 +59,7 @@ Created by **create-rx-app@0.6.4**
 - [Next.js](https://nextjs.org/) (API proxy and simple SSR)
 - [Material Icons](https://material.io/resources/icons/) (by SVG)
 
-### Services
-
-- [ECB](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html "Euro foreign exchange reference rates") ([XML](https://en.wikipedia.org/wiki/XML) parsing)
-- [Open Exchange Rates](https://openexchangerates.org/) ([JSON](https://www.json.org/json-en.html) parsing)
-
 ### Plus
 
 - CSS in JS
 - Debounce
-
-## Challenges
-
-- [Animation loop for wallet items rotation](./src/components/RotatingItems/RotatingItems.tsx) with [Matrix 3D transformations](./src/lib/utils/3d/Mat3.ts)
-- [Slider](./src/components/Slider/Slider.tsx) (Paged Slider aka Page Control for iOS)
-- [React Navigation Stack for Web](./src/containers/Navigator/web/StackView.tsx) (copied from React Navigation)
-- [Particles cloud](./src/components/FloatingBubbles/FloatingBubbles.tsx) (Floating bubbles)
-
-## TODO
-
-- Validate rates by timestamp (some diff when rates fetching is not possible)
